@@ -1,17 +1,16 @@
-//
-//  MonarchEtiquetteApp.swift
-//  MonarchEtiquette
-//
-//  Created by Alex on 23.02.2026.
-//
-
 import SwiftUI
 
 @main
 struct MonarchEtiquetteApp: App {
+    @State private var dataManager = DataManager()
+    @State private var progressManager = ProgressManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
+                .environment(dataManager)
+                .environment(progressManager)
+                .preferredColorScheme(.dark)
         }
     }
 }
