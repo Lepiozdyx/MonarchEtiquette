@@ -22,16 +22,16 @@ struct ProfileView: View {
                             .padding(.horizontal, 24)
                             .padding(.top, 24)
 
+                        refinementGoalsSection(vm: vm)
+                            .padding(.horizontal, 24)
+                            .padding(.top, 32)
+                        
                         GoldButton(title: "Save Changes", icon: "checkmark") {
                             focusedField = nil
                             vm.saveProfile()
                         }
                         .padding(.horizontal, 24)
                         .padding(.top, 24)
-
-                        refinementGoalsSection(vm: vm)
-                            .padding(.horizontal, 24)
-                            .padding(.top, 32)
 
                         societyStatusSection(vm: vm)
                             .padding(.horizontal, 24)

@@ -12,25 +12,25 @@ struct HomeView: View {
             RoyalBackground()
 
             ScrollView(showsIndicators: false) {
-                VStack(spacing: 0) {
+                VStack(spacing: 10) {
                     logoSection
-                        .padding(.top, 32)
+                        .padding(.top, 4)
 
                     if let advice = viewModel?.todayAdvice {
                         adviceCard(advice: advice)
                             .padding(.horizontal, 24)
-                            .padding(.top, 32)
+                            .padding(.top)
                     }
 
                     GoldButton(title: "Start Today's Practice") {
                         onNavigateToPractice()
                     }
                     .padding(.horizontal, 24)
-                    .padding(.top, 32)
+                    .padding(.top)
 
                     continueLearningSectionTitle
                         .padding(.horizontal, 24)
-                        .padding(.top, 32)
+                        .padding(.top)
 
                     if let category = viewModel?.featuredCategory {
                         Button {
@@ -44,7 +44,7 @@ struct HomeView: View {
 
                     progressSectionTitle
                         .padding(.horizontal, 24)
-                        .padding(.top, 32)
+                        .padding(.top)
 
                     HStack(spacing: 16) {
                         StatCard(
