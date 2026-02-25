@@ -7,33 +7,35 @@ struct LessonsView: View {
     @State private var selectedCategory: LessonCategory?
 
     var body: some View {
-        ZStack {
-            RoyalBackground()
+        NavigationStack {
+            ZStack {
+                RoyalBackground()
 
-            ScrollView(showsIndicators: false) {
-                VStack(alignment: .leading, spacing: 0) {
-                    headerSection
-                        .padding(.horizontal, 24)
-                        .padding(.top, 32)
+                ScrollView(showsIndicators: false) {
+                    VStack(alignment: .leading, spacing: 0) {
+                        headerSection
+                            .padding(.horizontal, 24)
+                            .padding(.top, 32)
 
-                    categoryList
-                        .padding(.top, 16)
+                        categoryList
+                            .padding(.top, 16)
 
-                    GoldDivider()
-                        .frame(maxWidth: .infinity)
-                        .padding(.top, 32)
+                        GoldDivider()
+                            .frame(maxWidth: .infinity)
+                            .padding(.top, 32)
 
-                    Spacer(minLength: 32)
+                        Spacer(minLength: 32)
+                    }
                 }
             }
-        }
-        .onAppear {
-            if viewModel == nil {
-                viewModel = LessonsViewModel(dataManager: dataManager, progressManager: progressManager)
+            .onAppear {
+                if viewModel == nil {
+                    viewModel = LessonsViewModel(dataManager: dataManager, progressManager: progressManager)
+                }
             }
-        }
-        .navigationDestination(item: $selectedCategory) { category in
-            LessonDetailView(category: category)
+            .navigationDestination(item: $selectedCategory) { category in
+                LessonDetailView(category: category)
+            }
         }
     }
 
@@ -67,9 +69,7 @@ struct LessonsView: View {
 }
 
 #Preview {
-    NavigationStack {
-        LessonsView()
-            .environment(DataManager())
-            .environment(ProgressManager())
-    }
+    LessonsView()
+        .environment(DataManager())
+        .environment(ProgressManager())
 }

@@ -4,7 +4,8 @@ struct HomeView: View {
     @Environment(DataManager.self) private var dataManager
     @Environment(ProgressManager.self) private var progressManager
     @State private var viewModel: HomeViewModel?
-    @Binding var selectedTab: Int
+    var onNavigateToPractice: () -> Void = {}
+    var onNavigateToLessons: () -> Void = {}
 
     var body: some View {
         ZStack {
@@ -22,7 +23,7 @@ struct HomeView: View {
                     }
 
                     GoldButton(title: "Start Today's Practice") {
-                        selectedTab = 2
+                        onNavigateToPractice()
                     }
                     .padding(.horizontal, 24)
                     .padding(.top, 32)
@@ -33,7 +34,7 @@ struct HomeView: View {
 
                     if let category = viewModel?.featuredCategory {
                         Button {
-                            selectedTab = 1
+                            onNavigateToLessons()
                         } label: {
                             LessonCard(category: category, isCompact: true)
                                 .padding(.horizontal, 24)
@@ -133,7 +134,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(selectedTab: .constant(0))
+    HomeView()
         .environment(DataManager())
         .environment(ProgressManager())
 }

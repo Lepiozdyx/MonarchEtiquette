@@ -3,77 +3,92 @@ import SwiftUI
 struct MainTabView: View {
     @State private var selectedTab = 0
 
-    private let tabs: [(label: String, icon: String)] = [
-        ("Home", "house"),
-        ("Lessons", "book"),
-        ("Practice", "target"),
-        ("Progress", "chart.line.uptrend.xyaxis"),
-        ("Profile", "person")
-    ]
+    var body: some View {
+        Group {
+            switch selectedTab {
+            case 0:
+                HomeView(
+                    onNavigateToPractice: { selectedTab = 2 },
+                    onNavigateToLessons: { selectedTab = 1 }
+                )
+            case 1:
+                LessonsView()
+            case 2:
+                PracticeView()
+            case 3:
+                AppProgressView()
+            case 4:
+                ProfileView()
+            default:
+                HomeView(
+                    onNavigateToPractice: { selectedTab = 2 },
+                    onNavigateToLessons: { selectedTab = 1 }
+                )
+            }
+        }
+        .safeAreaInset(edge: .bottom) {
+            CustomTabBar(selectedTab: $selectedTab)
+        }
+    }
+}
+
+// MARK: - CustomTabBar
+
+private struct TabMeta {
+    let label: String
+    let icon: String
+}
+
+private let tabItems: [TabMeta] = [
+    TabMeta(label: "Home",     icon: "house"),
+    TabMeta(label: "Lessons",  icon: "book"),
+    TabMeta(label: "Practice", icon: "target"),
+    TabMeta(label: "Progress", icon: "chart.line.uptrend.xyaxis"),
+    TabMeta(label: "Profile",  icon: "person")
+]
+
+struct CustomTabBar: View {
+    @Binding var selectedTab: Int
 
     var body: some View {
-        ZStack(alignment: .bottom) {
-            TabView(selection: $selectedTab) {
-                NavigationStack {
-                    HomeView(selectedTab: $selectedTab)
-                }
-                .tag(0)
-
-                NavigationStack {
-                    LessonsView()
-                }
-                .tag(1)
-
-                NavigationStack {
-                    PracticeView()
-                }
-                .tag(2)
-
-                NavigationStack {
-                    AppProgressView()
-                }
-                .tag(3)
-
-                NavigationStack {
-                    ProfileView()
-                }
-                .tag(4)
-            }
-            .tabViewStyle(.page(indexDisplayMode: .never))
-            .ignoresSafeArea()
-
-            customTabBar
-        }
-        .ignoresSafeArea()
-    }
-
-    private var tabBarHeight: CGFloat {
-        56 + 12 + max(safeAreaBottomInset, 8)
-    }
-
-    private var customTabBar: some View {
         VStack(spacing: 0) {
             LinearGradient.goldHorizontal
                 .frame(height: 0.6)
 
             HStack(spacing: 0) {
-                ForEach(Array(tabs.enumerated()), id: \.offset) { index, tab in
-                    tabItem(index: index, label: tab.label, icon: tab.icon)
+                ForEach(Array(tabItems.enumerated()), id: \.offset) { index, item in
+                    TabBarButton(
+                        label: item.label,
+                        icon: item.icon,
+                        isSelected: selectedTab == index
+                    ) {
+                        selectedTab = index
+                    }
                 }
             }
             .padding(.top, 12)
-            .padding(.bottom, max(safeAreaBottomInset, 8))
+            .padding(.bottom, max(bottomSafeArea, 8))
             .background(LinearGradient.tabBarGradient)
             .shadow(color: .black.opacity(0.5), radius: 20, x: 0, y: -4)
         }
     }
 
-    private func tabItem(index: Int, label: String, icon: String) -> some View {
-        let isSelected = selectedTab == index
+    private var bottomSafeArea: CGFloat {
+        (UIApplication.shared.connectedScenes.first as? UIWindowScene)?
+            .windows.first?.safeAreaInsets.bottom ?? 0
+    }
+}
 
-        return Button {
-            selectedTab = index
-        } label: {
+// MARK: - TabBarButton
+
+private struct TabBarButton: View {
+    let label: String
+    let icon: String
+    let isSelected: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
             ZStack {
                 if isSelected {
                     RoundedRectangle(cornerRadius: 10)
@@ -102,11 +117,6 @@ struct MainTabView: View {
         }
         .buttonStyle(.plain)
         .animation(.easeInOut(duration: 0.2), value: isSelected)
-    }
-
-    private var safeAreaBottomInset: CGFloat {
-        (UIApplication.shared.connectedScenes.first as? UIWindowScene)?
-            .windows.first?.safeAreaInsets.bottom ?? 0
     }
 }
 
