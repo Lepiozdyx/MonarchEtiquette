@@ -34,454 +34,343 @@
       "imageName": "diningElegance",
       "sfSymbol": "fork.knife",
       "lessons": [
-        {
-          "id": "dining_l1",
-          "title": "Setting the Table",
-          "content": "A properly set table is the foundation of a refined dining experience. Forks are placed to the left of the plate in order of use from outside in. Knives and spoons are set to the right, with the knife blade always facing the plate. Glasses are placed at the upper right of the setting.\n\nThe bread plate sits to the upper left, and the butter knife rests horizontally across its rim. Napkins may be folded elegantly and placed on the charger plate or to the left of the forks.",
-          "keyPoints": [
-            "Forks left, knives and spoons right",
-            "Use utensils from outside in",
-            "Bread plate is upper left, glasses upper right",
-            "Knife blade always faces the plate"
-          ]
-        },
-        {
-          "id": "dining_l2",
-          "title": "Napkin Etiquette",
-          "content": "Upon being seated, place your napkin on your lap immediately — folded in half with the fold toward you. Never tuck a napkin into your collar or waistband.\n\nUse the napkin to gently blot your lips before drinking, never to wipe your face vigorously. If you must leave the table temporarily, place your napkin loosely on your chair — never on the table. At the conclusion of the meal, place it unfolded but loosely gathered to the left of your plate.",
-          "keyPoints": [
-            "Unfold the napkin onto your lap immediately upon sitting",
-            "Blot lips gently — never wipe",
-            "Temporary departure: napkin on chair",
-            "End of meal: napkin to the left of the plate"
-          ]
-        },
-        {
-          "id": "dining_l3",
-          "title": "The Art of Silverware",
-          "content": "There are two accepted styles of eating: the American style and the Continental (European) style. In the American style, you cut with the knife in the right hand and fork in the left, then switch the fork to the right hand to eat. In the Continental style, the fork remains in the left hand and the knife in the right throughout.\n\nWhen resting between bites, place utensils in an inverted V on the plate. When finished, lay them parallel at the 4 o'clock position — knife blade inward, fork tines up.",
-          "keyPoints": [
-            "American or Continental style are both correct",
-            "Never gesture with silverware",
-            "Rest position: inverted V on plate",
-            "Finished position: parallel at 4 o'clock"
-          ]
-        }
+        { "id": "dining_l1", "title": "Setting the Table", "content": "A properly set table is the foundation of a refined dining experience...", "keyPoints": ["Forks left, knives right", "Outside in", "Bread left, glasses right", "Knife blade inward"] },
+        { "id": "dining_l2", "title": "Napkin Etiquette", "content": "Upon being seated, place your napkin on your lap...", "keyPoints": ["Napkin immediately", "Blot lips", "Chair if leaving", "Left of plate at end"] },
+        { "id": "dining_l3", "title": "The Art of Silverware", "content": "There are two accepted styles of eating...", "keyPoints": ["American or Continental", "No gesturing", "Rest V", "Finish 4 o’clock"] },
+
+        { "id": "dining_l4", "title": "Bread and Butter Protocol", "content": "Bread should always be broken into small pieces...", "keyPoints": ["Break, don’t bite", "Butter piece by piece", "Bread plate left"] },
+        { "id": "dining_l5", "title": "Soup Etiquette", "content": "Soup is consumed by dipping the spoon away from you...", "keyPoints": ["Spoon away", "No slurping", "Sip from side"] },
+        { "id": "dining_l6", "title": "Wine Glass Handling", "content": "Hold wine glasses by the stem...", "keyPoints": ["Stem only", "Small sips", "No overfilling"] },
+        { "id": "dining_l7", "title": "Passing Dishes", "content": "Food is passed to the right...", "keyPoints": ["Right direction", "Offer before serving", "Use utensils provided"] },
+        { "id": "dining_l8", "title": "Eating Pace", "content": "Match the pace of the table...", "keyPoints": ["Do not rush", "Observe others", "Pause between bites"] },
+        { "id": "dining_l9", "title": "Conversation at Table", "content": "Dining conversation should remain pleasant...", "keyPoints": ["Neutral topics", "No mouth full", "Engage everyone"] },
+        { "id": "dining_l10", "title": "Finishing a Meal", "content": "Signals communicate your status...", "keyPoints": ["Utensils position", "Napkin left", "Thank host"] }
       ],
       "quizzes": [
-        {
-          "id": "q_dining_1",
-          "question": "Which fork is used first at a formally set table?",
-          "options": ["The fork closest to the plate", "The fork furthest from the plate", "The dessert fork", "It does not matter"],
-          "correctIndex": 1
-        },
-        {
-          "id": "q_dining_2",
-          "question": "Where should you place your napkin if you must temporarily leave the table?",
-          "options": ["On the table next to your plate", "Folded on your seat", "Loosely on your chair", "Tucked into your collar"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_dining_3",
-          "question": "In which direction does the knife blade always face?",
-          "options": ["Outward, away from the plate", "Toward the plate", "Upward", "Toward the guest"],
-          "correctIndex": 1
-        },
-        {
-          "id": "q_dining_4",
-          "question": "Where is the bread plate positioned in a formal place setting?",
-          "options": ["Lower right", "Upper right", "Lower left", "Upper left"],
-          "correctIndex": 3
-        },
-        {
-          "id": "q_dining_5",
-          "question": "What does the 'Continental style' of eating mean?",
-          "options": ["Eating with only a spoon", "The fork stays in the left hand throughout the meal", "Switching the fork to the right hand after cutting", "Eating without utensils"],
-          "correctIndex": 1
-        }
+        { "id": "q_dining_1", "question": "Which fork is used first?", "options": ["Closest", "Furthest", "Dessert", "Any"], "correctIndex": 1 },
+        { "id": "q_dining_2", "question": "Napkin when leaving?", "options": ["Table", "Seat folded", "Chair", "Collar"], "correctIndex": 2 },
+        { "id": "q_dining_3", "question": "Knife blade direction?", "options": ["Outward", "Toward plate", "Up", "Guest"], "correctIndex": 1 },
+        { "id": "q_dining_4", "question": "Bread plate position?", "options": ["LR", "UR", "LL", "UL"], "correctIndex": 3 },
+        { "id": "q_dining_5", "question": "Continental style?", "options": ["Spoon only", "Fork left always", "Switch fork", "No utensils"], "correctIndex": 1 },
+
+        { "id": "q_dining_6", "question": "How should bread be eaten?", "options": ["Whole bite", "Broken pieces", "Knife cut", "Fork only"], "correctIndex": 1 },
+        { "id": "q_dining_7", "question": "Soup spoon motion?", "options": ["Toward you", "Away from you", "Circular", "Any"], "correctIndex": 1 },
+        { "id": "q_dining_8", "question": "Wine glass held by?", "options": ["Bowl", "Stem", "Base", "Any"], "correctIndex": 1 },
+        { "id": "q_dining_9", "question": "Food passing direction?", "options": ["Left", "Right", "Center", "Host only"], "correctIndex": 1 },
+        { "id": "q_dining_10", "question": "Utensils finished position?", "options": ["Crossed", "Parallel 4", "Edge", "Napkin"], "correctIndex": 1 },
+
+        { "id": "q_dining_11", "question": "Should elbows rest on table?", "options": ["Yes always", "No", "Only dessert", "Only formal"], "correctIndex": 1 },
+        { "id": "q_dining_12", "question": "Talking with food?", "options": ["Acceptable", "Avoided", "Encouraged", "Depends"], "correctIndex": 1 },
+        { "id": "q_dining_13", "question": "Phone at table?", "options": ["Visible", "Pocket", "Hand", "Use anytime"], "correctIndex": 1 },
+        { "id": "q_dining_14", "question": "If utensil drops?", "options": ["Pick up", "Ask server", "Ignore", "Leave table"], "correctIndex": 1 },
+        { "id": "q_dining_15", "question": "Taste before seasoning?", "options": ["No", "Yes", "Only salt", "Host decides"], "correctIndex": 1 },
+
+        { "id": "q_dining_16", "question": "Bread butter method?", "options": ["Whole", "Piece by piece", "Dip", "Knife"], "correctIndex": 1 },
+        { "id": "q_dining_17", "question": "Chewing speed?", "options": ["Fast", "Moderate", "Slow only", "Irrelevant"], "correctIndex": 1 },
+        { "id": "q_dining_18", "question": "If disliked food?", "options": ["Complain", "Eat politely", "Reject loudly", "Leave"], "correctIndex": 1 },
+        { "id": "q_dining_19", "question": "Host toast timing?", "options": ["Before sip", "After sip", "Ignore", "Any"], "correctIndex": 0 },
+        { "id": "q_dining_20", "question": "Napkin end?", "options": ["Folded", "Loose left", "Chair", "Pocket"], "correctIndex": 1 },
+
+        { "id": "q_dining_21", "question": "Serving utensil use?", "options": ["Personal fork", "Provided utensil", "Hand", "Knife"], "correctIndex": 1 },
+        { "id": "q_dining_22", "question": "If choking?", "options": ["Quiet signal", "Stand loudly", "Ignore", "Leave"], "correctIndex": 0 },
+        { "id": "q_dining_23", "question": "Spill response?", "options": ["Ignore", "Apologize briefly", "Blame", "Laugh loudly"], "correctIndex": 1 },
+        { "id": "q_dining_24", "question": "Plate pushing away?", "options": ["Yes", "No", "Only dessert", "Only buffet"], "correctIndex": 1 },
+        { "id": "q_dining_25", "question": "Burping?", "options": ["Excuse", "Acceptable", "Encouraged", "Ignore"], "correctIndex": 0 },
+
+        { "id": "q_dining_26", "question": "Sharing dish?", "options": ["Direct fork", "Serving utensil", "Hand", "Knife"], "correctIndex": 1 },
+        { "id": "q_dining_27", "question": "Ice clinking?", "options": ["Fine", "Avoid noise", "Required", "Host only"], "correctIndex": 1 },
+        { "id": "q_dining_28", "question": "Soup bowl tilt?", "options": ["Toward", "Away", "No tilt", "Any"], "correctIndex": 1 },
+        { "id": "q_dining_29", "question": "Finger foods?", "options": ["Fork", "Hands", "Knife", "Napkin"], "correctIndex": 1 },
+        { "id": "q_dining_30", "question": "Thanking host?", "options": ["Optional", "Essential", "Only formal", "Next day"], "correctIndex": 1 }
       ],
       "scenarios": [
-        {
-          "id": "s_dining_1",
-          "situation": "You are at a formal dinner and accidentally drop your napkin on the floor. What is the correct response?",
-          "options": ["Pick it up yourself and continue using it", "Pick it up and ask the server for a replacement", "Discreetly ask the server for a new napkin without touching the fallen one", "Leave it and continue without a napkin"],
-          "correctIndex": 2,
-          "explanation": "At a formal dinner, you should leave the dropped napkin and quietly signal the server. They will retrieve it and bring a fresh one. Bending under the table or drawing attention to the incident is considered poor form."
-        },
-        {
-          "id": "s_dining_2",
-          "situation": "You finish your meal before others at the table. What is the correct action?",
-          "options": ["Place utensils at the 4 o'clock position and wait quietly", "Stack your plate to make room on the table", "Immediately request dessert", "Begin using your phone while waiting"],
-          "correctIndex": 0,
-          "explanation": "Placing utensils at the 4 o'clock position signals to the server that you have finished. Waiting quietly while others continue shows consideration and respect for the dining experience."
-        },
-        {
-          "id": "s_dining_3",
-          "situation": "The bread basket is passed to you at the dinner table. What is the proper protocol?",
-          "options": ["Take your portion and pass it to your right", "Place it in the center of the table", "Take your portion and pass it to your left", "Wait for the host to instruct you"],
-          "correctIndex": 0,
-          "explanation": "Food is generally passed counterclockwise — to the right. Take your portion, then offer the basket to the person on your right."
-        }
+        { "id": "s_dining_1", "situation": "Drop napkin...", "options": ["Pick", "Ask replace", "Signal server", "Ignore"], "correctIndex": 2, "explanation": "Server replaces." },
+        { "id": "s_dining_2", "situation": "Finish early...", "options": ["Wait", "Stack", "Dessert", "Phone"], "correctIndex": 0, "explanation": "Wait politely." },
+        { "id": "s_dining_3", "situation": "Bread basket...", "options": ["Right", "Center", "Left", "Wait"], "correctIndex": 0, "explanation": "Pass right." },
+
+        { "id": "s_dining_4", "situation": "You spill wine...", "options": ["Ignore", "Apologize briefly", "Blame", "Leave"], "correctIndex": 1, "explanation": "Brief apology." },
+        { "id": "s_dining_5", "situation": "Wrong order served...", "options": ["Angry", "Quiet inform", "Eat anyway", "Leave"], "correctIndex": 1, "explanation": "Discreet correction." },
+        { "id": "s_dining_6", "situation": "Bone in mouth...", "options": ["Hand", "Napkin discreet", "Spit", "Leave"], "correctIndex": 1, "explanation": "Use napkin discreetly." }
       ]
     },
+
     {
       "id": "social",
       "title": "Social Manners",
       "subtitle": "The art of conversation and making impressions",
       "imageName": "socialGrace",
       "sfSymbol": "person.2",
+
       "lessons": [
-        {
-          "id": "social_l1",
-          "title": "The Art of Introduction",
-          "content": "Proper introductions set the tone for any social interaction. The fundamental rule: introduce the less prominent person to the more prominent one. In social settings, introduce younger to older; in professional settings, introduce junior to senior.\n\nAlways rise when being introduced unless it is physically impractical. Offer a firm handshake — neither crushing nor limp — lasting two to three seconds while maintaining comfortable eye contact. Repeat the person's name: 'It is a pleasure to meet you, Catherine.'",
-          "keyPoints": [
-            "Introduce junior to senior, younger to older",
-            "Always stand when being introduced",
-            "Firm handshake, 2–3 seconds, eye contact",
-            "Repeat the person's name upon meeting"
-          ]
-        },
-        {
-          "id": "social_l2",
-          "title": "Gracious Conversation",
-          "content": "The mark of a refined conversationalist is the ability to listen as artfully as they speak. Give your full attention to the speaker — no glancing at your phone or scanning the room. Ask thoughtful follow-up questions that demonstrate genuine interest.\n\nTopics to approach with care at social gatherings include religion, politics, personal finances, and health. When conversation turns contentious, the gracious guest redirects with a pleasant non-sequitur or excuses themselves courteously.",
-          "keyPoints": [
-            "Listen actively, do not interrupt",
-            "Ask follow-up questions to show interest",
-            "Avoid religion, politics, finances in mixed company",
-            "Redirect contentious topics gracefully"
-          ]
-        },
-        {
-          "id": "social_l3",
-          "title": "Thank You Notes",
-          "content": "A handwritten thank you note is one of the most powerful gestures in social etiquette. It should be sent within 24–48 hours of a dinner, gift, or favor. Use quality stationery and write in blue or black ink.\n\nA proper note is brief but personal: acknowledge the specific gesture, describe how it affected you, and close warmly. A thank you note sent via email or text is acceptable for casual occasions but never for formal events, job interviews, or significant gifts.",
-          "keyPoints": [
-            "Send within 24–48 hours",
-            "Handwritten on quality stationery",
-            "Be specific about what you are thanking them for",
-            "Email acceptable only for casual occasions"
-          ]
-        }
+        { "id": "social_l1", "title": "The Art of Introduction", "content": "Proper introductions set the tone...", "keyPoints": ["Junior to senior", "Stand", "Handshake", "Repeat name"] },
+        { "id": "social_l2", "title": "Gracious Conversation", "content": "The mark of a refined conversationalist...", "keyPoints": ["Listen", "Follow-up", "Avoid topics", "Redirect"] },
+        { "id": "social_l3", "title": "Thank You Notes", "content": "A handwritten note...", "keyPoints": ["24–48h", "Handwritten", "Specific", "Email casual"] },
+
+        { "id": "social_l4", "title": "Body Language", "content": "Nonverbal cues convey confidence...", "keyPoints": ["Eye contact", "Open posture", "Smile"] },
+        { "id": "social_l5", "title": "Remembering Names", "content": "Memory shows respect...", "keyPoints": ["Repeat name", "Associate", "Use later"] },
+        { "id": "social_l6", "title": "Small Talk Mastery", "content": "Light topics create comfort...", "keyPoints": ["Weather", "Travel", "Events"] },
+        { "id": "social_l7", "title": "Complimenting Gracefully", "content": "Compliments should be sincere...", "keyPoints": ["Specific", "Short", "Authentic"] },
+        { "id": "social_l8", "title": "Receiving Compliments", "content": "Accept with gratitude...", "keyPoints": ["Say thank you", "No deflect"] },
+        { "id": "social_l9", "title": "Handling Awkward Moments", "content": "Humor and grace diffuse tension...", "keyPoints": ["Stay calm", "Light humor"] },
+        { "id": "social_l10", "title": "Exiting Conversations", "content": "Close politely...", "keyPoints": ["Excuse warmly", "Reason optional"] }
       ],
+
       "quizzes": [
-        {
-          "id": "q_social_1",
-          "question": "When making introductions, who is introduced to whom?",
-          "options": ["The older person to the younger", "The more prominent person to the less prominent", "The less prominent person to the more prominent", "It does not matter"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_social_2",
-          "question": "How long should a proper handshake last?",
-          "options": ["One brief pump", "Two to three seconds", "Five seconds or more", "Until the other person lets go"],
-          "correctIndex": 1
-        },
-        {
-          "id": "q_social_3",
-          "question": "Which topic is generally considered inappropriate at mixed social gatherings?",
-          "options": ["Travel experiences", "Personal finances", "Art and culture", "Recent books"],
-          "correctIndex": 1
-        },
-        {
-          "id": "q_social_4",
-          "question": "When should a thank you note ideally be sent?",
-          "options": ["Within a week", "Within 24–48 hours", "The same day only", "Whenever is convenient"],
-          "correctIndex": 1
-        },
-        {
-          "id": "q_social_5",
-          "question": "What is the mark of a refined conversationalist?",
-          "options": ["Speaking eloquently for extended periods", "Always having the final word", "Listening as artfully as they speak", "Using sophisticated vocabulary"],
-          "correctIndex": 2
-        }
+        { "id": "q_social_1", "question": "Intro rule?", "options": ["Older to younger", "Prominent to less", "Less to more", "None"], "correctIndex": 2 },
+        { "id": "q_social_2", "question": "Handshake duration?", "options": ["1 sec", "2–3 sec", "5 sec", "Until"], "correctIndex": 1 },
+        { "id": "q_social_3", "question": "Avoid topic?", "options": ["Travel", "Finance", "Books", "Art"], "correctIndex": 1 },
+        { "id": "q_social_4", "question": "Thank you timing?", "options": ["Week", "24–48h", "Same day only", "Any"], "correctIndex": 1 },
+        { "id": "q_social_5", "question": "Refined conversationalist?", "options": ["Talk long", "Final word", "Listen well", "Vocabulary"], "correctIndex": 2 },
+
+        { "id": "q_social_6", "question": "Eye contact shows?", "options": ["Confidence", "Aggression", "Weakness", "None"], "correctIndex": 0 },
+        { "id": "q_social_7", "question": "Compliment quality?", "options": ["Generic", "Specific", "Exaggerated", "None"], "correctIndex": 1 },
+        { "id": "q_social_8", "question": "Name memory trick?", "options": ["Ignore", "Repeat", "Write openly", "Avoid"], "correctIndex": 1 },
+        { "id": "q_social_9", "question": "Small talk goal?", "options": ["Debate", "Comfort", "Impress", "Silence"], "correctIndex": 1 },
+        { "id": "q_social_10", "question": "Interrupting?", "options": ["Fine", "Avoid", "Encouraged", "Depends"], "correctIndex": 1 },
+
+        { "id": "q_social_11", "question": "Smile meaning?", "options": ["Hostility", "Warmth", "Fear", "None"], "correctIndex": 1 },
+        { "id": "q_social_12", "question": "Exit phrase?", "options": ["Walk away", "Excuse politely", "Ignore", "Phone"], "correctIndex": 1 },
+        { "id": "q_social_13", "question": "Awkward silence?", "options": ["Panic", "New topic", "Leave", "Phone"], "correctIndex": 1 },
+        { "id": "q_social_14", "question": "Compliment response?", "options": ["Deny", "Thank", "Ignore", "Boast"], "correctIndex": 1 },
+        { "id": "q_social_15", "question": "Humor role?", "options": ["Tension reduce", "Increase", "Irrelevant", "None"], "correctIndex": 0 },
+
+        { "id": "q_social_16", "question": "Personal space?", "options": ["Ignore", "Respect", "Crowd", "Touch"], "correctIndex": 1 },
+        { "id": "q_social_17", "question": "Listening cue?", "options": ["Nod", "Phone", "Look away", "Interrupt"], "correctIndex": 0 },
+        { "id": "q_social_18", "question": "Voice tone?", "options": ["Moderate", "Loud", "Whisper", "None"], "correctIndex": 0 },
+        { "id": "q_social_19", "question": "Gesture size?", "options": ["Controlled", "Huge", "None", "Random"], "correctIndex": 0 },
+        { "id": "q_social_20", "question": "Follow up?", "options": ["Never", "Soon", "Year", "Optional"], "correctIndex": 1 },
+
+        { "id": "q_social_21", "question": "Eye roll?", "options": ["Respectful", "Rude", "Neutral", "Funny"], "correctIndex": 1 },
+        { "id": "q_social_22", "question": "Phone glance?", "options": ["Okay", "Disrespectful", "Required", "None"], "correctIndex": 1 },
+        { "id": "q_social_23", "question": "Laugh timing?", "options": ["Natural", "Forced", "None", "Late"], "correctIndex": 0 },
+        { "id": "q_social_24", "question": "Host greeting?", "options": ["Ignore", "Acknowledge", "Avoid", "Wave"], "correctIndex": 1 },
+        { "id": "q_social_25", "question": "Tone conflict?", "options": ["Calm", "Aggressive", "Silent", "None"], "correctIndex": 0 },
+
+        { "id": "q_social_26", "question": "Topic switch?", "options": ["Abrupt", "Smooth", "Ignore", "None"], "correctIndex": 1 },
+        { "id": "q_social_27", "question": "Apology length?", "options": ["Brief", "Long", "None", "Excuse"], "correctIndex": 0 },
+        { "id": "q_social_28", "question": "Greeting energy?", "options": ["Warm", "Cold", "None", "Over"], "correctIndex": 0 },
+        { "id": "q_social_29", "question": "Eye contact duration?", "options": ["Balanced", "Stare", "Avoid", "None"], "correctIndex": 0 },
+        { "id": "q_social_30", "question": "Conversation aim?", "options": ["Connection", "Dominance", "Silence", "Debate"], "correctIndex": 0 }
       ],
+
       "scenarios": [
-        {
-          "id": "s_social_1",
-          "situation": "At a cocktail party, someone begins loudly arguing a political opinion with another guest. You are part of the group. What is the refined response?",
-          "options": ["Join the debate enthusiastically", "Excuse yourself and find another conversation", "Tell them it is inappropriate to discuss politics", "Quietly change the subject with a pleasant observation"],
-          "correctIndex": 3,
-          "explanation": "A gracious guest redirects contentious conversations without drawing further attention to the conflict. Smoothly introducing a neutral observation or question is the most elegant solution."
-        },
-        {
-          "id": "s_social_2",
-          "situation": "You are at a dinner party and have been seated next to someone you have met before, but cannot remember their name. What do you do?",
-          "options": ["Avoid using their name throughout the evening", "Ask the host quietly before sitting down", "Introduce yourself as though meeting for the first time", "Admit warmly that you are embarrassed to have forgotten their name"],
-          "correctIndex": 3,
-          "explanation": "An honest, warm admission is far more gracious than an awkward evening of avoidance. Most people respond well to sincerity: 'I am embarrassed — I recall our conversation but not your name. Would you remind me?'"
-        }
+        { "id": "s_social_1", "situation": "Political argument...", "options": ["Join", "Leave", "Criticize", "Redirect"], "correctIndex": 3, "explanation": "Redirect." },
+        { "id": "s_social_2", "situation": "Forgot name...", "options": ["Avoid", "Ask host", "Reintro", "Admit"], "correctIndex": 3, "explanation": "Honesty." },
+
+        { "id": "s_social_3", "situation": "Awkward silence...", "options": ["Phone", "New topic", "Leave", "Ignore"], "correctIndex": 1, "explanation": "Introduce topic." },
+        { "id": "s_social_4", "situation": "Overtalking guest...", "options": ["Interrupt", "Wait pause", "Leave", "Ignore"], "correctIndex": 1, "explanation": "Wait." },
+        { "id": "s_social_5", "situation": "Unwanted compliment...", "options": ["Reject", "Thank", "Ignore", "Argue"], "correctIndex": 1, "explanation": "Gratitude." },
+        { "id": "s_social_6", "situation": "Need exit...", "options": ["Walk away", "Excuse politely", "Phone", "Lie"], "correctIndex": 1, "explanation": "Polite exit." }
       ]
     },
+
     {
       "id": "public",
       "title": "Public Conduct",
       "subtitle": "Elegance in shared spaces",
       "imageName": "publicElegance",
       "sfSymbol": "building.columns",
+
       "lessons": [
-        {
-          "id": "public_l1",
-          "title": "Conduct in Shared Spaces",
-          "content": "Public elegance is the art of moving through the world with awareness and consideration. Keep your voice modulated — conversations should not carry across rooms. In elevators, face forward, keep a respectful distance, and silence your phone.\n\nOn escalators, stand to the right and walk to the left. When entering or exiting a room, be aware of those behind you — hold the door, do not let it swing shut. Arrive punctually; lateness communicates that your time is more valuable than another's.",
-          "keyPoints": [
-            "Moderate your voice in shared spaces",
-            "Stand right, walk left on escalators",
-            "Hold doors for those behind you",
-            "Punctuality is a form of respect"
-          ]
-        },
-        {
-          "id": "public_l2",
-          "title": "Mobile Phone Etiquette",
-          "content": "The smartphone is perhaps the greatest challenge to modern public etiquette. In the company of others, the phone belongs in your pocket or bag — not on the table, not in your hand, not glanced at repeatedly.\n\nIf a call must be taken, excuse yourself and step away. Keep the call brief and your voice low. Never photograph others without permission. In theatres, concert halls, houses of worship, and formal meetings, phones must be silenced or switched off entirely.",
-          "keyPoints": [
-            "Phone off the table during meals and meetings",
-            "Step away to take calls, keep them brief",
-            "Never photograph others without permission",
-            "Silence or switch off in formal venues"
-          ]
-        },
-        {
-          "id": "public_l3",
-          "title": "The Gracious Guest and Host",
-          "content": "Whether you are the guest or the host, your role carries responsibilities. As a guest, arrive within the expected window — not early (which inconveniences the host) and not so late as to be disruptive. Bring a small, thoughtful gift: wine, flowers, chocolates, or something personal.\n\nAs a host, greet each guest personally, make introductions, and ensure no one is left unattended for long. The mark of a great host is that every guest feels like the most important person in the room.",
-          "keyPoints": [
-            "Arrive within the expected window, not early",
-            "Bring a small, thoughtful host gift",
-            "Hosts should greet each guest personally",
-            "Ensure no guest feels left out"
-          ]
-        }
+        { "id": "public_l1", "title": "Conduct in Shared Spaces", "content": "Public elegance is awareness...", "keyPoints": ["Voice", "Distance", "Doors", "Punctuality"] },
+        { "id": "public_l2", "title": "Mobile Phone Etiquette", "content": "Smartphone etiquette...", "keyPoints": ["Pocket", "Step away", "Permission photos"] },
+        { "id": "public_l3", "title": "The Gracious Guest and Host", "content": "Guest responsibilities...", "keyPoints": ["Timing", "Gift", "Greeting"] },
+
+        { "id": "public_l4", "title": "Queue Etiquette", "content": "Respect order...", "keyPoints": ["No cutting", "Distance"] },
+        { "id": "public_l5", "title": "Public Transport Manners", "content": "Offer seats...", "keyPoints": ["Priority", "Space"] },
+        { "id": "public_l6", "title": "Noise Awareness", "content": "Volume control...", "keyPoints": ["Headphones", "Low voice"] },
+        { "id": "public_l7", "title": "Personal Space", "content": "Respect boundaries...", "keyPoints": ["Distance", "Touch consent"] },
+        { "id": "public_l8", "title": "Street Courtesy", "content": "Sidewalk rules...", "keyPoints": ["Right side", "Awareness"] },
+        { "id": "public_l9", "title": "Public Cleanliness", "content": "Shared responsibility...", "keyPoints": ["Trash", "Respect"] },
+        { "id": "public_l10", "title": "Respecting Staff", "content": "Courtesy to workers...", "keyPoints": ["Polite tone", "Patience"] }
       ],
+
       "quizzes": [
-        {
-          "id": "q_public_1",
-          "question": "On an escalator, where should you stand if you are not walking?",
-          "options": ["Left side", "Center", "Right side", "Either side is acceptable"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_public_2",
-          "question": "When arriving as a guest to a dinner party, what is the ideal timing?",
-          "options": ["Exactly on time to the minute", "5–10 minutes early to help the host", "Within the expected window — 5–15 minutes after the stated time", "Whenever is convenient for you"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_public_3",
-          "question": "Where should your phone be during a business lunch or dinner?",
-          "options": ["Face-down on the table", "In your pocket or bag", "In your hand in case of important calls", "On silent but visible on the table"],
-          "correctIndex": 1
-        },
-        {
-          "id": "q_public_4",
-          "question": "What is the appropriate action when someone behind you is approaching a door you have just passed through?",
-          "options": ["Continue walking — it is their responsibility", "Glance back but do not stop", "Hold the door for them", "Only hold it if they are elderly or carrying something"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_public_5",
-          "question": "Arriving late to a meeting or event communicates what?",
-          "options": ["That you are very busy and in demand", "That your time is more valuable than others'", "That you had unavoidable circumstances", "Nothing in particular"],
-          "correctIndex": 1
-        }
+        { "id": "q_public_1", "question": "Escalator standing?", "options": ["Left", "Center", "Right", "Either"], "correctIndex": 2 },
+        { "id": "q_public_2", "question": "Dinner arrival?", "options": ["Exact", "Early", "Window", "Any"], "correctIndex": 2 },
+        { "id": "q_public_3", "question": "Phone during lunch?", "options": ["Table", "Pocket", "Hand", "Visible"], "correctIndex": 1 },
+        { "id": "q_public_4", "question": "Door behind?", "options": ["Ignore", "Glance", "Hold", "Conditional"], "correctIndex": 2 },
+        { "id": "q_public_5", "question": "Late means?", "options": ["Busy", "Your time > theirs", "Circumstance", "Nothing"], "correctIndex": 1 },
+
+        { "id": "q_public_6", "question": "Queue cutting?", "options": ["Okay", "Rude", "Depends", "Host"], "correctIndex": 1 },
+        { "id": "q_public_7", "question": "Seat priority?", "options": ["Elderly", "Friends", "Self", "None"], "correctIndex": 0 },
+        { "id": "q_public_8", "question": "Headphones volume?", "options": ["Low leak", "Loud", "None", "Speaker"], "correctIndex": 0 },
+        { "id": "q_public_9", "question": "Trash disposal?", "options": ["Floor", "Bin", "Seat", "Pocket"], "correctIndex": 1 },
+        { "id": "q_public_10", "question": "Staff tone?", "options": ["Respectful", "Commanding", "Ignore", "Cold"], "correctIndex": 0 },
+
+        { "id": "q_public_11", "question": "Sidewalk blocking?", "options": ["Fine", "Avoid", "Required", "None"], "correctIndex": 1 },
+        { "id": "q_public_12", "question": "Elevator behavior?", "options": ["Face door", "Talk loud", "Phone", "Turn"], "correctIndex": 0 },
+        { "id": "q_public_13", "question": "Sneezing?", "options": ["Cover", "Open", "Ignore", "None"], "correctIndex": 0 },
+        { "id": "q_public_14", "question": "Music speaker?", "options": ["Okay", "Headphones", "Required", "None"], "correctIndex": 1 },
+        { "id": "q_public_15", "question": "Seat bag?", "options": ["Fine", "Remove", "Depends", "None"], "correctIndex": 1 },
+
+        { "id": "q_public_16", "question": "Queue distance?", "options": ["Close", "Respect", "Touch", "None"], "correctIndex": 1 },
+        { "id": "q_public_17", "question": "Phone call loud?", "options": ["Yes", "No", "Depends", "None"], "correctIndex": 1 },
+        { "id": "q_public_18", "question": "Escalator walk?", "options": ["Left", "Right", "Center", "None"], "correctIndex": 0 },
+        { "id": "q_public_19", "question": "Apology bump?", "options": ["Ignore", "Sorry", "Blame", "None"], "correctIndex": 1 },
+        { "id": "q_public_20", "question": "Litter?", "options": ["Okay", "Never", "Sometimes", "None"], "correctIndex": 1 },
+
+        { "id": "q_public_21", "question": "Public anger?", "options": ["Control", "Express", "Ignore", "None"], "correctIndex": 0 },
+        { "id": "q_public_22", "question": "Queue talk?", "options": ["Quiet", "Loud", "None", "Any"], "correctIndex": 0 },
+        { "id": "q_public_23", "question": "Door slam?", "options": ["Avoid", "Fine", "None", "Depends"], "correctIndex": 0 },
+        { "id": "q_public_24", "question": "Pet control?", "options": ["Owner", "Public", "None", "City"], "correctIndex": 0 },
+        { "id": "q_public_25", "question": "Shared table?", "options": ["Clean", "Mess", "Ignore", "None"], "correctIndex": 0 },
+
+        { "id": "q_public_26", "question": "Library voice?", "options": ["Low", "Normal", "Loud", "None"], "correctIndex": 0 },
+        { "id": "q_public_27", "question": "Seat recline?", "options": ["Considerate", "Any", "None", "Never"], "correctIndex": 0 },
+        { "id": "q_public_28", "question": "Public photo?", "options": ["Consent", "Any", "None", "Secret"], "correctIndex": 0 },
+        { "id": "q_public_29", "question": "Queue phone?", "options": ["Fine", "Awareness", "None", "Ignore"], "correctIndex": 1 },
+        { "id": "q_public_30", "question": "Public respect?", "options": ["Essential", "Optional", "None", "Rare"], "correctIndex": 0 }
       ],
+
       "scenarios": [
-        {
-          "id": "s_public_1",
-          "situation": "Your phone rings loudly during a theatre performance. What is the correct response?",
-          "options": ["Answer quickly and whisper", "Silence it immediately and do not answer", "Excuse yourself and rush out to answer", "Let it ring until it stops"],
-          "correctIndex": 1,
-          "explanation": "The first priority is to silence the phone immediately, causing the least possible disruption. Attempting to answer or rushing out creates additional disturbance. A sincere apology to those nearby after the performance is appropriate."
-        },
-        {
-          "id": "s_public_2",
-          "situation": "You arrive at a dinner party 20 minutes early because you left home with extra time. What should you do?",
-          "options": ["Ring the doorbell — the host will appreciate the help", "Wait in your car or nearby until closer to the stated time", "Call ahead to say you are early and offer to help", "Walk around the neighborhood for exactly 20 minutes then ring the bell"],
-          "correctIndex": 1,
-          "explanation": "Arriving early inconveniences the host, who is still preparing. Wait nearby until the appropriate time. If unavoidable, a quick call offering to come back later is more considerate than simply appearing at the door."
-        }
+        { "id": "s_public_1", "situation": "Phone rings theatre...", "options": ["Answer", "Silence", "Run", "Ignore"], "correctIndex": 1, "explanation": "Silence." },
+        { "id": "s_public_2", "situation": "Arrive early...", "options": ["Ring", "Wait", "Call", "Walk"], "correctIndex": 1, "explanation": "Wait." },
+
+        { "id": "s_public_3", "situation": "Crowded train...", "options": ["Push", "Wait turn", "Yell", "Leave"], "correctIndex": 1, "explanation": "Wait." },
+        { "id": "s_public_4", "situation": "Seat elderly...", "options": ["Ignore", "Offer", "Pretend", "Leave"], "correctIndex": 1, "explanation": "Offer." },
+        { "id": "s_public_5", "situation": "Loud group...", "options": ["Join", "Ignore", "Move away", "Argue"], "correctIndex": 2, "explanation": "Move." },
+        { "id": "s_public_6", "situation": "Drop trash...", "options": ["Leave", "Pick up", "Kick", "Ignore"], "correctIndex": 1, "explanation": "Pick up." }
       ]
     },
+
     {
       "id": "formal",
       "title": "Formal Events",
       "subtitle": "Protocol for ceremonial occasions",
       "imageName": "formalProtocol",
       "sfSymbol": "star.circle",
+
       "lessons": [
-        {
-          "id": "formal_l1",
-          "title": "Black Tie and White Tie",
-          "content": "Dress codes at formal events are a form of respect to the host and occasion. Black tie requires a dinner jacket (tuxedo) for men — black or midnight blue, with a white dress shirt, bow tie, and black patent leather shoes. For women, a floor-length gown or sophisticated cocktail dress is appropriate.\n\nWhite tie — the most formal of all dress codes — requires men to wear a black tailcoat, white waistcoat, white bow tie, and white gloves optional. Women should wear a floor-length ball gown. When in doubt, it is always better to be slightly overdressed than underdressed.",
-          "keyPoints": [
-            "Black tie: tuxedo, white shirt, bow tie",
-            "White tie: most formal, tailcoat required",
-            "Women: floor-length gown for both",
-            "Overdressed is always preferable to underdressed"
-          ]
-        },
-        {
-          "id": "formal_l2",
-          "title": "Formal Event Protocol",
-          "content": "At formal events, protocol governs movement and interaction. Wait to be seated by a host or usher. If a seating plan is displayed, locate your place before the gathering begins. Do not rearrange place cards — this is a serious breach of etiquette.\n\nWhen meeting dignitaries or senior figures, wait to be introduced rather than introducing yourself. Address people by their formal titles until invited to use first names. Mobile phones should be switched off or left in the cloakroom.",
-          "keyPoints": [
-            "Wait to be seated — do not choose your own seat",
-            "Never rearrange place cards",
-            "Wait to be introduced to dignitaries",
-            "Use formal titles until invited otherwise"
-          ]
-        },
-        {
-          "id": "formal_l3",
-          "title": "Toasting and Speeches",
-          "content": "When a toast is proposed, raise your glass with a smile and make eye contact with the person being toasted. After the toast, take a sip — you need not drink deeply. Never toast with water, as it is considered bad luck in many cultures; if you do not drink alcohol, raise your glass and touch your lips to the rim.\n\nIf you are asked to give a toast, stand, wait for silence, speak clearly and warmly, and keep it brief. A toast that runs longer than two to three minutes will lose the room.",
-          "keyPoints": [
-            "Raise your glass and make eye contact during toasts",
-            "Never toast with water",
-            "Non-drinkers may raise glass and touch it to their lips",
-            "A good toast is warm, brief, and sincere"
-          ]
-        }
+        { "id": "formal_l1", "title": "Black Tie and White Tie", "content": "Dress codes...", "keyPoints": ["Tuxedo", "Tailcoat", "Gown"] },
+        { "id": "formal_l2", "title": "Formal Event Protocol", "content": "Protocol governs...", "keyPoints": ["Seating", "Titles"] },
+        { "id": "formal_l3", "title": "Toasting and Speeches", "content": "When a toast...", "keyPoints": ["Eye contact", "Brief"] },
+
+        { "id": "formal_l4", "title": "Receiving Lines", "content": "Greeting lines...", "keyPoints": ["Short greeting"] },
+        { "id": "formal_l5", "title": "Formal Invitations", "content": "RSVP etiquette...", "keyPoints": ["Respond promptly"] },
+        { "id": "formal_l6", "title": "Seating Hierarchy", "content": "Placement rules...", "keyPoints": ["Honor seats"] },
+        { "id": "formal_l7", "title": "Dress Accessories", "content": "Details matter...", "keyPoints": ["Minimal"] },
+        { "id": "formal_l8", "title": "Ceremonial Timing", "content": "Punctuality...", "keyPoints": ["Arrive early"] },
+        { "id": "formal_l9", "title": "Awards Etiquette", "content": "Receiving honors...", "keyPoints": ["Gratitude"] },
+        { "id": "formal_l10", "title": "Departure Protocol", "content": "Leaving gracefully...", "keyPoints": ["Thank host"] }
       ],
+
       "quizzes": [
-        {
-          "id": "q_formal_1",
-          "question": "What does a black tie dress code require of men?",
-          "options": ["A dark business suit", "A dinner jacket, white dress shirt, and bow tie", "A morning coat", "Any formal attire in black"],
-          "correctIndex": 1
-        },
-        {
-          "id": "q_formal_2",
-          "question": "Is it acceptable to rearrange your place card at a formally seated dinner?",
-          "options": ["Yes, if you prefer a different seat", "Only if you swap with someone who agrees", "Never — it is a serious breach of etiquette", "Only if the host approves"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_formal_3",
-          "question": "What should a non-drinker do when a toast is proposed?",
-          "options": ["Decline to participate", "Toast with water", "Raise their glass and touch their lips to the rim", "Leave the table briefly"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_formal_4",
-          "question": "How long should a dinner toast ideally run?",
-          "options": ["As long as needed to express everything", "5 minutes or more", "Two to three minutes maximum", "Under 30 seconds"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_formal_5",
-          "question": "When meeting a dignitary, what is the correct approach?",
-          "options": ["Introduce yourself confidently", "Wait to be introduced rather than introducing yourself", "Offer your hand immediately", "Use their first name to seem friendly"],
-          "correctIndex": 1
-        }
+        { "id": "q_formal_1", "question": "Black tie men?", "options": ["Suit", "Tuxedo", "Coat", "Any"], "correctIndex": 1 },
+        { "id": "q_formal_2", "question": "Place card?", "options": ["Move", "Swap", "Never", "Ask"], "correctIndex": 2 },
+        { "id": "q_formal_3", "question": "Non drinker toast?", "options": ["Decline", "Water", "Raise lips", "Leave"], "correctIndex": 2 },
+        { "id": "q_formal_4", "question": "Toast length?", "options": ["Long", "5+", "2–3", "30 sec"], "correctIndex": 2 },
+        { "id": "q_formal_5", "question": "Meet dignitary?", "options": ["Self intro", "Wait intro", "Handshake", "First name"], "correctIndex": 1 },
+
+        { "id": "q_formal_6", "question": "RSVP timing?", "options": ["Prompt", "Late", "Ignore", "Any"], "correctIndex": 0 },
+        { "id": "q_formal_7", "question": "White tie shoes?", "options": ["Patent", "Sneakers", "Boots", "Any"], "correctIndex": 0 },
+        { "id": "q_formal_8", "question": "Receiving line?", "options": ["Short greet", "Long talk", "Ignore", "None"], "correctIndex": 0 },
+        { "id": "q_formal_9", "question": "Formal title?", "options": ["Use", "Skip", "Nickname", "None"], "correctIndex": 0 },
+        { "id": "q_formal_10", "question": "Host gift?", "options": ["Optional", "Thoughtful", "None", "Money"], "correctIndex": 1 },
+
+        { "id": "q_formal_11", "question": "Dress overdressed?", "options": ["Better", "Worse", "Same", "None"], "correctIndex": 0 },
+        { "id": "q_formal_12", "question": "Seating change?", "options": ["Allowed", "Forbidden", "Host only", "Swap"], "correctIndex": 1 },
+        { "id": "q_formal_13", "question": "Phone?", "options": ["Off", "On", "Vibrate", "Table"], "correctIndex": 0 },
+        { "id": "q_formal_14", "question": "Speech tone?", "options": ["Warm", "Cold", "Long", "None"], "correctIndex": 0 },
+        { "id": "q_formal_15", "question": "Arrival?", "options": ["Early", "Late", "Any", "Skip"], "correctIndex": 0 },
+
+        { "id": "q_formal_16", "question": "Dress gloves?", "options": ["Optional", "Required", "Never", "Any"], "correctIndex": 0 },
+        { "id": "q_formal_17", "question": "Award response?", "options": ["Thanks", "Boast", "Ignore", "None"], "correctIndex": 0 },
+        { "id": "q_formal_18", "question": "Dinner start?", "options": ["Host cue", "Self", "Server", "Any"], "correctIndex": 0 },
+        { "id": "q_formal_19", "question": "Toast eye contact?", "options": ["Yes", "No", "Optional", "None"], "correctIndex": 0 },
+        { "id": "q_formal_20", "question": "Departure?", "options": ["Thank", "Leave", "Ignore", "None"], "correctIndex": 0 },
+
+        { "id": "q_formal_21", "question": "Bow tie?", "options": ["Self tie", "Clip", "Any", "None"], "correctIndex": 0 },
+        { "id": "q_formal_22", "question": "Gown length?", "options": ["Floor", "Mini", "Any", "None"], "correctIndex": 0 },
+        { "id": "q_formal_23", "question": "Speech humor?", "options": ["Tasteful", "Crude", "None", "Any"], "correctIndex": 0 },
+        { "id": "q_formal_24", "question": "Table posture?", "options": ["Upright", "Lean", "Slouch", "None"], "correctIndex": 0 },
+        { "id": "q_formal_25", "question": "Drink toast?", "options": ["Sip", "Chug", "None", "Ignore"], "correctIndex": 0 },
+
+        { "id": "q_formal_26", "question": "Name cards?", "options": ["Respect", "Move", "Ignore", "None"], "correctIndex": 0 },
+        { "id": "q_formal_27", "question": "Host greet?", "options": ["Essential", "Optional", "None", "Skip"], "correctIndex": 0 },
+        { "id": "q_formal_28", "question": "Dress code?", "options": ["Follow", "Ignore", "Modify", "None"], "correctIndex": 0 },
+        { "id": "q_formal_29", "question": "Toast water?", "options": ["Avoid", "Fine", "Required", "None"], "correctIndex": 0 },
+        { "id": "q_formal_30", "question": "Protocol aim?", "options": ["Respect", "Control", "Rules", "None"], "correctIndex": 0 }
       ],
+
       "scenarios": [
-        {
-          "id": "s_formal_1",
-          "situation": "You arrive at a formal seated dinner and cannot find your name on the seating plan. What do you do?",
-          "options": ["Sit wherever you like before others arrive", "Take a vacant seat near someone you know", "Quietly inform a member of staff or the host", "Stand until someone addresses the situation"],
-          "correctIndex": 2,
-          "explanation": "Always alert staff or the host discreetly. Never seat yourself in an unassigned seat, as it may cause a chain of confusion for other guests and the host."
-        },
-        {
-          "id": "s_formal_2",
-          "situation": "You are invited to propose a toast at a formal dinner but you have not prepared one. What is the correct approach?",
-          "options": ["Decline with a gracious explanation", "Speak at length to fill the silence", "Keep it brief, sincere, and warm — 3–5 sentences", "Ask someone else to do it instead"],
-          "correctIndex": 2,
-          "explanation": "A heartfelt, concise toast is far more powerful than a lengthy, improvised speech. Stand, make eye contact, say something genuine and warm in a few sentences, and raise your glass."
-        }
+        { "id": "s_formal_1", "situation": "No seat name...", "options": ["Sit", "Near friend", "Inform staff", "Stand"], "correctIndex": 2, "explanation": "Staff." },
+        { "id": "s_formal_2", "situation": "Unexpected toast...", "options": ["Decline", "Long", "Brief warm", "Ask"], "correctIndex": 2, "explanation": "Brief." },
+
+        { "id": "s_formal_3", "situation": "Wrong dress level...", "options": ["Ignore", "Adjust confidence", "Leave", "Apologize"], "correctIndex": 1, "explanation": "Confidence." },
+        { "id": "s_formal_4", "situation": "Late arrival...", "options": ["Enter loud", "Quietly join", "Leave", "Apologize speech"], "correctIndex": 1, "explanation": "Quiet." },
+        { "id": "s_formal_5", "situation": "Seat confusion...", "options": ["Argue", "Ask staff", "Swap", "Leave"], "correctIndex": 1, "explanation": "Ask." },
+        { "id": "s_formal_6", "situation": "Speech forgot...", "options": ["Panic", "Short thanks", "Leave", "Blame"], "correctIndex": 1, "explanation": "Short." }
       ]
     },
+
     {
       "id": "professional",
       "title": "Modern Professional Etiquette",
       "subtitle": "Contemporary workplace grace and conduct",
       "imageName": "professionalGrace",
       "sfSymbol": "briefcase",
+
       "lessons": [
-        {
-          "id": "professional_l1",
-          "title": "Business Meeting Protocol",
-          "content": "Arrive two to three minutes before a meeting begins — never late, but not so early as to be disruptive. Bring only what you need. Sit upright and give the speaker your undivided attention. Close your laptop unless it is needed for your contribution.\n\nAddress others by their preferred name and title. Do not interrupt. If you disagree, wait for a natural pause and phrase your perspective constructively: 'I appreciate that perspective — may I offer an alternative view?' End every meeting by confirming next steps and responsibilities.",
-          "keyPoints": [
-            "Arrive 2–3 minutes early",
-            "Close laptop unless actively contributing",
-            "Do not interrupt — wait for a natural pause",
-            "Confirm next steps at the end of every meeting"
-          ]
-        },
-        {
-          "id": "professional_l2",
-          "title": "Email and Digital Correspondence",
-          "content": "Professional email is a reflection of your personal brand. Use a clear subject line that describes the content. Begin with a proper salutation — 'Dear Ms. Thompson' for formal, 'Hello James' for established relationships. Keep messages concise and purposeful.\n\nRespond to emails within 24 hours, even if only to acknowledge receipt and indicate when a full response will follow. Proofread every message before sending. Avoid using all capitals (which reads as shouting), excessive exclamation marks, or emoji in formal correspondence.",
-          "keyPoints": [
-            "Use a clear, descriptive subject line",
-            "Respond within 24 hours",
-            "Proofread before sending",
-            "Avoid all caps, excessive punctuation, emoji in formal emails"
-          ]
-        },
-        {
-          "id": "professional_l3",
-          "title": "Networking with Grace",
-          "content": "Networking is not transactional — it is relational. Approach every introduction as an opportunity to genuinely learn about another person, not to pitch yourself. Ask thoughtful questions, remember details, and follow up.\n\nWhen exchanging business cards, present yours with both hands and receive another's with appreciation, reading it carefully before setting it respectfully on the table or in a card holder. Never write on a person's business card in their presence. Following a networking event, send a brief, personalised message within 24 hours referencing a specific element of your conversation.",
-          "keyPoints": [
-            "Networking is relational, not transactional",
-            "Present and receive business cards with both hands",
-            "Never write on a business card in their presence",
-            "Follow up within 24 hours with a personalised message"
-          ]
-        }
+        { "id": "professional_l1", "title": "Business Meeting Protocol", "content": "Arrive early...", "keyPoints": ["2–3 min", "Attention", "No interrupt"] },
+        { "id": "professional_l2", "title": "Email and Digital Correspondence", "content": "Professional email...", "keyPoints": ["Subject", "24h", "Proofread"] },
+        { "id": "professional_l3", "title": "Networking with Grace", "content": "Networking is relational...", "keyPoints": ["Relationships", "Follow up"] },
+
+        { "id": "professional_l4", "title": "Video Meeting Etiquette", "content": "Virtual presence...", "keyPoints": ["Camera", "Mute"] },
+        { "id": "professional_l5", "title": "Office Dress", "content": "Professional image...", "keyPoints": ["Appropriate", "Clean"] },
+        { "id": "professional_l6", "title": "Time Management Respect", "content": "Respect calendars...", "keyPoints": ["Punctual"] },
+        { "id": "professional_l7", "title": "Feedback Delivery", "content": "Constructive tone...", "keyPoints": ["Specific", "Kind"] },
+        { "id": "professional_l8", "title": "Receiving Feedback", "content": "Growth mindset...", "keyPoints": ["Listen"] },
+        { "id": "professional_l9", "title": "Office Communication", "content": "Clarity...", "keyPoints": ["Concise"] },
+        { "id": "professional_l10", "title": "Professional Boundaries", "content": "Healthy limits...", "keyPoints": ["Respect"] }
       ],
+
       "quizzes": [
-        {
-          "id": "q_professional_1",
-          "question": "When should you ideally arrive for a business meeting?",
-          "options": ["Exactly on time", "5–10 minutes early", "2–3 minutes early", "10–15 minutes early to set up"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_professional_2",
-          "question": "How long should you take to respond to a professional email?",
-          "options": ["Within an hour", "Within 24 hours", "Within the same working week", "When it is convenient for you"],
-          "correctIndex": 1
-        },
-        {
-          "id": "q_professional_3",
-          "question": "When receiving a business card, what is the correct protocol?",
-          "options": ["Quickly pocket it and continue the conversation", "Read it carefully and place it respectfully on the table", "Write a note on it immediately to remember the person", "Hand it back if you already have their contact details"],
-          "correctIndex": 1
-        },
-        {
-          "id": "q_professional_4",
-          "question": "In a meeting, how should you phrase disagreement?",
-          "options": ["'That is simply not correct.'", "'With respect, you are wrong.'", "'I appreciate that perspective — may I offer an alternative view?'", "Remain silent to avoid conflict"],
-          "correctIndex": 2
-        },
-        {
-          "id": "q_professional_5",
-          "question": "What is the primary purpose of professional networking?",
-          "options": ["To collect as many contacts as possible", "To pitch your services to potential clients", "To build genuine, mutually beneficial relationships", "To advance your career above others"],
-          "correctIndex": 2
-        }
+        { "id": "q_professional_1", "question": "Meeting arrival?", "options": ["On time", "5–10", "2–3", "15"], "correctIndex": 2 },
+        { "id": "q_professional_2", "question": "Email reply?", "options": ["1h", "24h", "Week", "Any"], "correctIndex": 1 },
+        { "id": "q_professional_3", "question": "Business card?", "options": ["Pocket", "Read", "Write", "Return"], "correctIndex": 1 },
+        { "id": "q_professional_4", "question": "Disagreement phrase?", "options": ["Wrong", "Respect wrong", "Alt view", "Silent"], "correctIndex": 2 },
+        { "id": "q_professional_5", "question": "Networking purpose?", "options": ["Contacts", "Pitch", "Relationships", "Advance"], "correctIndex": 2 },
+
+        { "id": "q_professional_6", "question": "Camera on?", "options": ["Yes", "No", "Optional", "Never"], "correctIndex": 0 },
+        { "id": "q_professional_7", "question": "Mute when?", "options": ["Not speaking", "Always", "Never", "Optional"], "correctIndex": 0 },
+        { "id": "q_professional_8", "question": "Dress code?", "options": ["Match culture", "Ignore", "Casual", "None"], "correctIndex": 0 },
+        { "id": "q_professional_9", "question": "Feedback tone?", "options": ["Harsh", "Constructive", "Silent", "None"], "correctIndex": 1 },
+        { "id": "q_professional_10", "question": "Calendar respect?", "options": ["Essential", "Optional", "None", "Ignore"], "correctIndex": 0 },
+
+        { "id": "q_professional_11", "question": "Interrupt boss?", "options": ["Yes", "No", "Sometimes", "None"], "correctIndex": 1 },
+        { "id": "q_professional_12", "question": "Reply all?", "options": ["Careful", "Always", "Never", "None"], "correctIndex": 0 },
+        { "id": "q_professional_13", "question": "Emoji email?", "options": ["Formal no", "Yes", "Always", "None"], "correctIndex": 0 },
+        { "id": "q_professional_14", "question": "Late work?", "options": ["Notify", "Ignore", "Hide", "None"], "correctIndex": 0 },
+        { "id": "q_professional_15", "question": "Meeting notes?", "options": ["Useful", "Ignore", "Never", "None"], "correctIndex": 0 },
+
+        { "id": "q_professional_16", "question": "Conflict tone?", "options": ["Calm", "Aggressive", "Silent", "None"], "correctIndex": 0 },
+        { "id": "q_professional_17", "question": "Dress hygiene?", "options": ["Important", "Optional", "None", "Ignore"], "correctIndex": 0 },
+        { "id": "q_professional_18", "question": "Deadline miss?", "options": ["Communicate", "Hide", "Ignore", "None"], "correctIndex": 0 },
+        { "id": "q_professional_19", "question": "Credit team?", "options": ["Yes", "No", "Optional", "None"], "correctIndex": 0 },
+        { "id": "q_professional_20", "question": "Office gossip?", "options": ["Avoid", "Join", "Spread", "None"], "correctIndex": 0 },
+
+        { "id": "q_professional_21", "question": "Follow up?", "options": ["Yes", "No", "Later", "None"], "correctIndex": 0 },
+        { "id": "q_professional_22", "question": "Respect time?", "options": ["Yes", "No", "Optional", "None"], "correctIndex": 0 },
+        { "id": "q_professional_23", "question": "Meeting agenda?", "options": ["Helpful", "Ignore", "None", "Optional"], "correctIndex": 0 },
+        { "id": "q_professional_24", "question": "Interrupt peers?", "options": ["Avoid", "Yes", "None", "Optional"], "correctIndex": 0 },
+        { "id": "q_professional_25", "question": "Office tone?", "options": ["Respectful", "Casual rude", "None", "Any"], "correctIndex": 0 },
+
+        { "id": "q_professional_26", "question": "Mic test?", "options": ["Before", "After", "Never", "None"], "correctIndex": 0 },
+        { "id": "q_professional_27", "question": "Camera framing?", "options": ["Eye level", "Low", "High", "None"], "correctIndex": 0 },
+        { "id": "q_professional_28", "question": "Note taking?", "options": ["Active", "Ignore", "None", "Optional"], "correctIndex": 0 },
+        { "id": "q_professional_29", "question": "Boundaries?", "options": ["Healthy", "None", "Ignore", "Optional"], "correctIndex": 0 },
+        { "id": "q_professional_30", "question": "Professional aim?", "options": ["Trust", "Power", "Control", "None"], "correctIndex": 0 }
       ],
+
       "scenarios": [
-        {
-          "id": "s_professional_1",
-          "situation": "You are in a business meeting and your colleague says something you believe is factually incorrect. What do you do?",
-          "options": ["Correct them immediately and firmly", "Say nothing — it is not your place", "Wait for a pause, then offer your perspective constructively", "Send them a message on your phone during the meeting"],
-          "correctIndex": 2,
-          "explanation": "The gracious professional waits for a natural pause and frames their perspective respectfully. Direct contradiction in front of others damages relationships and creates defensiveness."
-        },
-        {
-          "id": "s_professional_2",
-          "situation": "A senior colleague sends you a long email with a complex request, and you need more time to formulate a proper response. What do you send?",
-          "options": ["Nothing — wait until you have a proper answer", "A quick, informal text to acknowledge receipt", "A brief, professional email acknowledging receipt and indicating when your full response will follow", "Forward it to a colleague to handle"],
-          "correctIndex": 2,
-          "explanation": "Acknowledging receipt promptly — even when a full response needs more time — demonstrates professionalism and respect for the sender's time. Never leave professional correspondence without acknowledgement for more than 24 hours."
-        }
+        { "id": "s_professional_1", "situation": "Colleague wrong...", "options": ["Correct", "Silent", "Pause constructive", "Text"], "correctIndex": 2, "explanation": "Constructive." },
+        { "id": "s_professional_2", "situation": "Complex email...", "options": ["Nothing", "Text", "Ack email", "Forward"], "correctIndex": 2, "explanation": "Acknowledge." },
+
+        { "id": "s_professional_3", "situation": "Camera off request...", "options": ["Refuse", "Explain politely", "Ignore", "Leave"], "correctIndex": 1, "explanation": "Polite." },
+        { "id": "s_professional_4", "situation": "Late meeting...", "options": ["Join loud", "Apologize brief", "Ignore", "Blame"], "correctIndex": 1, "explanation": "Brief." },
+        { "id": "s_professional_5", "situation": "Negative feedback...", "options": ["Defend", "Listen", "Argue", "Leave"], "correctIndex": 1, "explanation": "Listen." },
+        { "id": "s_professional_6", "situation": "Boundary violation...", "options": ["Ignore", "State calmly", "Explode", "Quit"], "correctIndex": 1, "explanation": "Calm boundary." }
       ]
     }
   ]
