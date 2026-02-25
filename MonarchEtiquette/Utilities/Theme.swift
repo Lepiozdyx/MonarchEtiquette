@@ -54,10 +54,7 @@ extension Font {
     }
     
     static func inter(_ size: CGFloat, weight: Font.Weight = .regular) -> Font {
-        switch weight {
-        case .medium: return .custom("Inter-Medium", size: size)
-        default: return .custom("Inter-Regular", size: size)
-        }
+        .system(size: size, weight: weight, design: .default)
     }
 }
 

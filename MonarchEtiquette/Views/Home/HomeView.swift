@@ -85,7 +85,7 @@ struct HomeView: View {
 
     private func adviceCard(advice: DailyAdvice) -> some View {
         HStack(alignment: .top, spacing: 16) {
-            Image(systemName: advice.sfSymbol)
+            Image(systemName: "crown")
                 .font(.system(size: 22, weight: .light))
                 .foregroundStyle(Color.mGold)
                 .frame(width: 28, height: 28)
@@ -104,6 +104,7 @@ struct HomeView: View {
                     .fixedSize(horizontal: false, vertical: true)
             }
         }
+        .frame(maxWidth: .infinity)
         .padding(.horizontal, 24)
         .padding(.vertical, 24)
         .background(
