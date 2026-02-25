@@ -66,16 +66,11 @@ struct CustomTabBar: View {
                     }
                 }
             }
-            .padding(.top, 12)
-            .padding(.bottom, max(bottomSafeArea, 8))
+            .padding(.horizontal)
+            .padding(.top, 10)
             .background(LinearGradient.tabBarGradient)
-            .shadow(color: .black.opacity(0.5), radius: 20, x: 0, y: -4)
+            .shadow(color: .black.opacity(0.5), radius: 10, x: 0, y: -4)
         }
-    }
-
-    private var bottomSafeArea: CGFloat {
-        (UIApplication.shared.connectedScenes.first as? UIWindowScene)?
-            .windows.first?.safeAreaInsets.bottom ?? 0
     }
 }
 
@@ -109,14 +104,13 @@ private struct TabBarButton: View {
                         .tracking(0.22)
                         .foregroundStyle(isSelected ? Color.mGold : Color.mCream)
                 }
-                .padding(.vertical, 8)
             }
             .frame(maxWidth: .infinity)
-            .frame(height: 56)
+            .frame(height: 49)
             .opacity(isSelected ? 1.0 : 0.6)
         }
         .buttonStyle(.plain)
-        .animation(.easeInOut(duration: 0.2), value: isSelected)
+        .animation(.default, value: isSelected)
     }
 }
 

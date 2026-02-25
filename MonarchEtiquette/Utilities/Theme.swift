@@ -48,9 +48,11 @@ extension Font {
     static func playfair(_ size: CGFloat, weight: Font.Weight = .medium) -> Font {
         .custom("PlayfairDisplay-Medium", size: size)
     }
+    
     static func playfairRegular(_ size: CGFloat) -> Font {
         .custom("PlayfairDisplay-Regular", size: size)
     }
+    
     static func inter(_ size: CGFloat, weight: Font.Weight = .regular) -> Font {
         switch weight {
         case .medium: return .custom("Inter-Medium", size: size)
