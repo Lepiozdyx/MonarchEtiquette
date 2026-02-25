@@ -27,19 +27,25 @@ final class PracticeViewModel {
     }
 
     func questionsForSession() -> [QuizQuestion] {
-        guard let cat = selectedCategory else { return [] }
-        let pool = selectedMode == .deepSession
-            ? categories.flatMap { $0.quizzes }
-            : cat.quizzes
+        let pool: [QuizQuestion]
+        if selectedCategoryId == "mixed" || selectedMode == .deepSession {
+            pool = categories.flatMap { $0.quizzes }
+        } else {
+            guard let cat = selectedCategory else { return [] }
+            pool = cat.quizzes
+        }
         let count = min(selectedMode.questionCount, pool.count)
         return Array(pool.shuffled().prefix(count))
     }
 
     func scenariosForSession() -> [Scenario] {
-        guard let cat = selectedCategory else { return [] }
-        let pool = selectedCategoryId == "mixed"
-            ? categories.flatMap { $0.scenarios }
-            : cat.scenarios
+        let pool: [Scenario]
+        if selectedCategoryId == "mixed" {
+            pool = categories.flatMap { $0.scenarios }
+        } else {
+            guard let cat = selectedCategory else { return [] }
+            pool = cat.scenarios
+        }
         let count = min(selectedMode.questionCount, pool.count)
         return Array(pool.shuffled().prefix(count))
     }
