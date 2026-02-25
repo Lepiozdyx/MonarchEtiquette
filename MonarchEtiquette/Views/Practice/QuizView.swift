@@ -6,6 +6,8 @@ struct QuizView: View {
     let mode: PracticeMode
     let onComplete: (Double) -> Void
 
+    @Environment(\.dismiss) private var dismiss
+
     @State private var currentIndex = 0
     @State private var selectedAnswer: Int? = nil
     @State private var showingResult = false
@@ -18,44 +20,65 @@ struct QuizView: View {
     }
 
     var body: some View {
-        ZStack {
-            RoyalBackground()
+        NavigationStack {
+            ZStack {
+                RoyalBackground()
 
-            if showingResult {
-                QuizResultView(
-                    correct: correctAnswers,
-                    total: questions.count,
-                    mode: mode,
-                    onDismiss: {
-                        onComplete(Double(correctAnswers) / Double(max(questions.count, 1)))
-                    }
-                )
-            } else if let question = currentQuestion {
-                VStack(spacing: 0) {
-                    progressHeader
-                        .padding(.horizontal, 24)
-                        .padding(.top, 16)
-
-                    questionCard(question: question)
-                        .padding(.horizontal, 24)
-                        .padding(.top, 32)
-
-                    answersSection(question: question)
-                        .padding(.horizontal, 24)
-                        .padding(.top, 24)
-
-                    Spacer()
-
-                    if showingFeedback {
-                        nextButton
+                if showingResult {
+                    QuizResultView(
+                        correct: correctAnswers,
+                        total: questions.count,
+                        mode: mode,
+                        onDismiss: {
+                            onComplete(Double(correctAnswers) / Double(max(questions.count, 1)))
+                        }
+                    )
+                } else if let question = currentQuestion {
+                    VStack(spacing: 0) {
+                        progressHeader
                             .padding(.horizontal, 24)
-                            .padding(.bottom, 40)
+                            .padding(.top, 16)
+
+                        questionCard(question: question)
+                            .padding(.horizontal, 24)
+                            .padding(.top, 32)
+
+                        answersSection(question: question)
+                            .padding(.horizontal, 24)
+                            .padding(.top, 24)
+
+                        Spacer()
+
+                        if showingFeedback {
+                            nextButton
+                                .padding(.horizontal, 24)
+                                .padding(.bottom, 40)
+                        }
+                    }
+                    .transition(.opacity)
+                }
+            }
+            .animation(.easeInOut(duration: 0.3), value: currentIndex)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    if !showingResult {
+                        Button {
+                            dismiss()
+                        } label: {
+                            HStack(spacing: 4) {
+                                Image(systemName: "chevron.left")
+                                    .font(.system(size: 16, weight: .semibold))
+                                Text("Back")
+                                    .font(.inter(16))
+                            }
+                            .foregroundStyle(Color.mGold)
+                        }
                     }
                 }
-                .transition(.opacity)
             }
+            .toolbarBackground(.hidden, for: .navigationBar)
         }
-        .animation(.easeInOut(duration: 0.3), value: currentIndex)
     }
 
     private var progressHeader: some View {

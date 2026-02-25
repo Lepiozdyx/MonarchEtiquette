@@ -5,6 +5,8 @@ struct ScenarioView: View {
     let categoryId: String
     let onComplete: (Double) -> Void
 
+    @Environment(\.dismiss) private var dismiss
+
     @State private var currentIndex = 0
     @State private var selectedAnswer: Int? = nil
     @State private var showingExplanation = false
@@ -17,55 +19,76 @@ struct ScenarioView: View {
     }
 
     var body: some View {
-        ZStack {
-            RoyalBackground()
+        NavigationStack {
+            ZStack {
+                RoyalBackground()
 
-            if scenarios.isEmpty {
-                emptyState
-            } else if showingResult {
-                QuizResultView(
-                    correct: correctAnswers,
-                    total: scenarios.count,
-                    mode: .scenarioMode,
-                    onDismiss: {
-                        onComplete(Double(correctAnswers) / Double(max(scenarios.count, 1)))
-                    }
-                )
-            } else if let scenario = currentScenario {
-                ScrollView(showsIndicators: false) {
-                    VStack(spacing: 0) {
-                        progressHeader
-                            .padding(.horizontal, 24)
-                            .padding(.top, 16)
-
-                        situationCard(scenario: scenario)
-                            .padding(.horizontal, 24)
-                            .padding(.top, 32)
-
-                        optionsSection(scenario: scenario)
-                            .padding(.horizontal, 24)
-                            .padding(.top, 24)
-
-                        if showingExplanation {
-                            explanationCard(scenario: scenario)
-                                .padding(.horizontal, 24)
-                                .padding(.top, 20)
-                                .transition(.move(edge: .bottom).combined(with: .opacity))
-
-                            GoldButton(title: currentIndex + 1 < scenarios.count ? "Next Scenario" : "See Results") {
-                                advance()
-                            }
-                            .padding(.horizontal, 24)
-                            .padding(.top, 24)
-                            .transition(.opacity)
+                if scenarios.isEmpty {
+                    emptyState
+                } else if showingResult {
+                    QuizResultView(
+                        correct: correctAnswers,
+                        total: scenarios.count,
+                        mode: .scenarioMode,
+                        onDismiss: {
+                            onComplete(Double(correctAnswers) / Double(max(scenarios.count, 1)))
                         }
+                    )
+                } else if let scenario = currentScenario {
+                    ScrollView(showsIndicators: false) {
+                        VStack(spacing: 0) {
+                            progressHeader
+                                .padding(.horizontal, 24)
+                                .padding(.top, 16)
 
-                        Spacer(minLength: 48)
+                            situationCard(scenario: scenario)
+                                .padding(.horizontal, 24)
+                                .padding(.top, 32)
+
+                            optionsSection(scenario: scenario)
+                                .padding(.horizontal, 24)
+                                .padding(.top, 24)
+
+                            if showingExplanation {
+                                explanationCard(scenario: scenario)
+                                    .padding(.horizontal, 24)
+                                    .padding(.top, 20)
+                                    .transition(.move(edge: .bottom).combined(with: .opacity))
+
+                                GoldButton(title: currentIndex + 1 < scenarios.count ? "Next Scenario" : "See Results") {
+                                    advance()
+                                }
+                                .padding(.horizontal, 24)
+                                .padding(.top, 24)
+                                .transition(.opacity)
+                            }
+
+                            Spacer(minLength: 48)
+                        }
+                    }
+                    .animation(.easeInOut(duration: 0.3), value: showingExplanation)
+                    .animation(.easeInOut(duration: 0.3), value: currentIndex)
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    if !showingResult && !scenarios.isEmpty {
+                        Button {
+                            dismiss()
+                        } label: {
+                            HStack(spacing: 4) {
+                                Image(systemName: "chevron.left")
+                                    .font(.system(size: 16, weight: .semibold))
+                                Text("Back")
+                                    .font(.inter(16))
+                            }
+                            .foregroundStyle(Color.mGold)
+                        }
                     }
                 }
-                .animation(.easeInOut(duration: 0.3), value: showingExplanation)
-                .animation(.easeInOut(duration: 0.3), value: currentIndex)
             }
+            .toolbarBackground(.hidden, for: .navigationBar)
         }
     }
 
