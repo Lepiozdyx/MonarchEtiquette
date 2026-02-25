@@ -78,13 +78,13 @@ struct ProfileView: View {
                     field: .name
                 )
 
-                inputField(
-                    label: "Age",
-                    text: Binding(get: { vm.ageText }, set: { vm.ageText = $0 }),
-                    placeholder: "Your age",
-                    field: .age,
-                    keyboardType: .numberPad
-                )
+//                inputField(
+//                    label: "Age",
+//                    text: Binding(get: { vm.ageText }, set: { vm.ageText = $0 }),
+//                    placeholder: "Your age",
+//                    field: .age,
+//                    keyboardType: .numberPad
+//                )
 
                 reasonsSection(vm: vm)
             }
